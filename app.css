@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(cornflowerblue 0%, #000000 40%, rgb(0, 0, 0) 100%);
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+
+.ProfileImage {
+    width: 200px;
+}
+
+.profile h2 {
+    color: white;
+}
+
+.profile h5 {
+    color: white;
+    transform: translateY();
+}
+.Pendidikan {
+    background-color: white;
+}
+
+.Pendidikan {
+    background: linear-gradient(rgb(255, 255, 255) 0%, #ffffffb9 40%, cornflowerblue 100%);
+    padding-bottom: 50px;
+}
+
+.Pendidikan h1{
+    margin-bottom: 30px;
+    padding-top: 55px;
+}
+.Proyek {
+padding-top: 40px;
+}
+.Proyek {
+    background-color: cornflowerblue;
+}
+
+.footer {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.contact a {
+    color: black;
+    font-size: 20px;
+}
+
+.watermark {
+    padding-top: 30px;
+}
+.navbar {
+    background-color: #343a40; /* Dark background for the navbar */
+}
+
+.nav-link {
+    color: white; /* Change link color */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.nav-link:hover {
+    color: #ffc107; /* Color on hover */
+}
+
+.navbar-brand img {
+    border-radius: 50%; /* Round logo */
+}
+
+.navbar .nav-link.active {
+    font-weight: bold; /* Highlight active link */
+    text-decoration: underline; /* Underline for active link */
+}

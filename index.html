@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Khaifah</title>
+
+    <style>
+        /* Custom styles for the modal */
+        .modal-content {
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+        .modal-header {
+            border-bottom: none; /* Remove default border */
+        }
+        .modal-body {
+            font-size: 1rem; /* Set a comfortable font size */
+        }
+        .btn-spacing {
+            margin-bottom: 30px; /* Add 30px bottom margin */
+        }
+
+        /* Styles for project images */
+        .project-img {
+            filter: grayscale(100%); /* Apply grayscale effect */
+            transition: filter 0.3s, transform 0.3s; /* Smooth transition for both effects */
+        }
+
+        .project-img:hover {
+            filter: grayscale(0%); /* Remove grayscale on hover */
+            transform: scale(1.1); /* Scale up the image */
+        }
+
+        /* Particle container */
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1; /* Keep content above particles */
+            text-align: center;
+            padding: 100px 0; /* Add some padding for spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Particle Effect -->
+    <div id="particles-js"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpeg" alt="Logo" style="width: 30px; height: 30px;" class="me-2"> NCT
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Pendidikan">Pendidikan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Proyek">Proyek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="mt-5 pt-5 header-content">
+        <div class="container text-center">
+            <div class="profile">
+                <img class="rounded-circle ProfileImage" src="ProfileImage.jpg" alt="Profile Image" />
+                <h2>Khaifah</h2>
+                <h5>A Web Developer and Designer</h5>
+            </div>
+        </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f3f4f5" fill-opacity="1" d="M0,160L120,170.7C240,181,480,203,720,202.7C960,203,1200,181,1320,170.7L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+    </svg>
+
+
+    <section id="Pendidikan" class="Pendidikan">
+        <h1 class="text-center">Pendidikan</h1>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa eum assumenda autem sit amet omnis reiciendis error commodi quos debitis dicta nostrum, similique ipsum, architecto laboriosam iste recusandae suscipit delectus ullam quae! Sed dolore, ullam illo aliquid hic officia dolorem molestias dolor. Magni, atque voluptas tempora eius, laborum voluptatibus deleniti praesentium itaque a dicta perferendis, minima quis aspernatur quia iste aliquid unde delectus! Quae dolorum ipsa culpa accusantium nulla!</p>
+                </div>
+                <div class="col">
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-secondary btn-spacing" data-bs-toggle="modal" data-bs-target="#exampleModal1">Pendidikan SD</button>
+                        <button type="button" class="btn btn-secondary btn-spacing" data-bs-toggle="modal" data-bs-target="#exampleModal2">Pendidikan SMP</button>
+                        <button type="button" class="btn btn-secondary btn-spacing" data-bs-toggle="modal" data-bs-target="#exampleModal3">Pendidikan SMK</button>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal4">Pendidikan Kuliah</button>
+                    </div>
+
+                    <!-- Modal SD -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel1">SDN 76 ULUDAYA</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">14 siswa</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal SMP -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel2">SMPN 12 MALLAWA</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">32 siswa</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal SMK -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel3">SMKS MUHAMMADIYAH 2 BONTOALA</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">22 siswa</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Kuliah -->
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel4">COMING SOON</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">TUNGU SAJA</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt autem neque necessitatibus repellat recusandae? A aperiam deleniti aspernatur recusandae. Architecto, suscipit molestias minima commodi delectus magnam ipsam cupiditate temporibus aliquid repellat accusantium fugiat. Adipisci, eveniet saepe?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Proyek" class="Proyek py-5">
+        <h1 class="text-center">Proyek</h1>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="img.png" class="img-fluid rounded project-img" alt="Proyek 1">
+                    <h3 class="mt-3">Nct Dream</h3>
+                    <p>A vibrant project celebrating the dynamic energy and creativity of the NCT Dream group. This project showcases various fan interactions, concept art, and highlights from their music videos, aimed at bringing fans closer to the group’s artistic journey..</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img2.png" class="img-fluid rounded project-img" alt="Proyek 2">
+                    <h3 class="mt-3">WayV</h3>
+                    <p>An exploration of WayV, the Chinese sub-unit of NCT. This project features music releases, dance practices, and behind-the-scenes content, emphasizing their unique style and cultural influence. It offers a glimpse into their performances and the stories behind their songs..</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img1.png" class="img-fluid rounded project-img" alt="Proyek 3">
+                    <h3 class="mt-3">Nct 127</h3>
+                    <p>A comprehensive overview of NCT 127, focusing on their chart-topping hits and groundbreaking performances. The project includes an analysis of their musical evolution, thematic elements in their albums, and the impact they have on the global music scene..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Proyek" class="Proyek py-5">
+       
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="family.jpg" class="img-fluid rounded project-img" alt="Proyek 1">
+                    <h3 class="mt-3">Family</h3>
+                    <p>Eid Mubarak 2023.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="bultan.jpg" class="img-fluid rounded project-img" alt="Proyek 2">
+                    <h3 class="mt-3">Bultan</h3>
+                    <p>Hutan Pinus Bulu Tanah.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="tsm.jpg" class="img-fluid rounded project-img" alt="Proyek 3">
+                    <h3 class="mt-3">Friends</h3>
+                    <p>Hangout With Friends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact" class="footer">
+        <div class="container py-5 text-center">
+            <h1>Contact</h1>
+            <p>Terhubung dengan saya di media sosial berikut:</p>
+            <a href="https://www.facebook.com/profile.php?id=61551782590257&mibextid=ZbWKwL" class="text-dark mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://wa.me/6285931420221" class="text-dark mx-2"><i class="fab fa-whatsapp fa-2x"></i></a>
+            <a href="https://www.instagram.com/khaifah711_/profilecard/?igsh=bnVyMnN4eG04Z2Jq" class="text-dark mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.tiktok.com/@itzzmeifah_?_t=8qrlw6ZvpEv&_r=1" class="text-dark mx-2"><i class="fab fa-tiktok fa-2x"></i></a>
+            <p class="mt-3" style="font-size: 0.8rem;">Dibuat Oleh Khaifah</p>
+        </div>
+    </section>
+    
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+
+</html>
